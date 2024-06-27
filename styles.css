@@ -1,0 +1,276 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+    color: #333;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    background: linear-gradient(to right, #0056b3, #003f8a);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: text-pop-up 1s ease-in-out;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #004494;
+    transform: scale(1.1);
+}
+
+/* Animação para o texto do cabeçalho */
+@keyframes text-pop-up {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilização do conteúdo principal */
+main {
+    padding: 40px 20px;
+    background: #fff;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilização das seções */
+section h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 2em;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #0056b3;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    animation: underline 1s ease-in-out;
+}
+
+@keyframes underline {
+    from { width: 0; }
+    to { width: 50%; }
+}
+
+section p, section article {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Estilização dos artigos */
+article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+article a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilização do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: #004494;
+    transform: scale(1.05);
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: #fff;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Ícones de redes sociais no rodapé */
+footer .social-icons {
+    margin: 10px 0;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #004494;
+    transform: scale(1.2);
+}
+
+/* Animação de bolhas no rodapé */
+footer::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: bubble 10s infinite;
+    z-index: 1;
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: bubble 15s infinite;
+    z-index: 1;
+}
+
+@keyframes bubble {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-20px) translateX(20px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+
+.dots {
+    display: inline;
+}
+
+.more {
+    display: none;
+}

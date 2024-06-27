@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artigos>
+    <artigo>
+        <titulo>O Impacto do Futebol na Saúde Mental</titulo>
+        <autor>João Silva</autor>
+        <data>2024-06-25</data>
+        <conteudo>Exploramos como a prática regular de futebol pode melhorar a saúde mental e bem-estar geral.</conteudo>
+    </artigo>
+    <artigo>
+        <titulo>Benefícios do Basquetebol para a Condição Física</titulo>
+        <autor>Maria Fernandes</autor>
+        <data>2024-06-20</data>
+        <conteudo>Discussão sobre como o basquetebol pode ajudar a manter uma boa forma física e saúde cardiovascular.</conteudo>
+    </artigo>
+    <artigo>
+        <titulo>Estratégias de Treinamento no Ténis</titulo>
+        <autor>Carlos Sousa</autor>
+        <data>2024-06-15</data>
+        <conteudo>Dicas e técnicas para melhorar o desempenho no ténis, desde o nível iniciante ao avançado.</conteudo>
+    </artigo>
+</artigos>
